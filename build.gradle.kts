@@ -52,11 +52,17 @@ dependencies {
     // DB
 	runtimeOnly("com.mysql:mysql-connector-j")
 
-    // Test
+	// Swagger
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.6")
+
+	// Test
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.boot:spring-boot-testcontainers")
 	testImplementation("org.testcontainers:junit-jupiter")
 	testImplementation("org.testcontainers:mysql")
+	testImplementation("org.mockito.kotlin:mockito-kotlin:5.3.1")
+	testImplementation("org.assertj:assertj-core:3.25.3")
+	testImplementation("io.mockk:mockk:1.9.3")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
